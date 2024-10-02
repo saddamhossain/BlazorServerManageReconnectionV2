@@ -1,0 +1,43 @@
+﻿<div id="components-reconnect-modal" class="components-reconnect-hide">
+   @* <div class="hide">
+        <div class="myDialog">
+            <div class="components-reconnect-top">
+                <div class="oi oi-transfer p10"></div> <h5>Connected</h5>
+            </div>
+        </div>
+    </div>*@
+
+    <div class="show">
+        <div class="myDialog">
+            <div class="components-reconnect-top">
+                <div class="oi oi-warning p10"></div> <h5>Attempting to connect to server</h5>
+            </div>
+            <div class="components-reconnect-bottom">
+                <a href="javascript:window.location.reload()" class="p5">Reload</a> the page to restore functionality.
+            </div>
+        </div>
+    </div>
+
+    <div class="failed">
+        <div class="myDialog">
+            <div class="components-reconnect-top">
+                <div class="oi oi-wrench p10"></div> <h5>Failing to connect</h5>
+            </div>
+
+            <div class="components-reconnect-bottom">
+                Reconnection failed, probably due to a network failure. <a href="javascript:window.Blazor.reconnect()" class="p5">Click here</a> to attempt reconnection.
+            </div>
+        </div>
+    </div>
+
+    <div class="rejected">
+        <div class="myDialog">
+            <div class="components-reconnect-top">
+                <div class="oi oi-ban p10"></div> <h5>Connection rejected</h5>
+            </div>
+            <div class="components-reconnect-bottom">
+                <a href="javascript:window.location.reload()" class="p5">Reload</a> the page to restore functionality.
+            </div>
+        </div>
+    </div>
+</div>
